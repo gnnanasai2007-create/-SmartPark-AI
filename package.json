@@ -1,0 +1,27 @@
+{
+  "name": "smartpark-ai",
+  "version": "1.0.0",
+  "description": "SmartPark AI - Intelligent Smart Parking Detection System",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client": "cd frontend && npm run dev",
+    "dev:ai": "python ai_engine/smart_detector.py",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "smart-parking",
+    "yolo",
+    "opencv",
+    "socketio",
+    "react",
+    "express",
+    "ocr"
+  ],
+  "author": "SmartPark AI Team",
+  "license": "MIT"
+}
